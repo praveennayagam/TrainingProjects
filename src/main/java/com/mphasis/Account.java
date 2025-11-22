@@ -82,7 +82,7 @@ public class Account {
 				+ ", branchName=" + branchName + ", pin=" + pin + "]";
 	}
 	
-	public void withDraw (double amount)
+	public void withDraw (double amount) throws InsufficientFundsException
 	{
 		System.out.println("Account withdraw");
 		

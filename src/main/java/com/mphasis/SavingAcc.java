@@ -25,7 +25,7 @@ public class SavingAcc extends Account {
 	}
 
 	
-	public void withDraw(double amount)
+	public void withDraw(double amount) throws InsufficientFundsException
 	{
 		if(amount<this.balance)
 		{
@@ -33,7 +33,7 @@ public class SavingAcc extends Account {
 			System.out.println("Withdraw Successfully");
 		}
 		else
-			System.err.println("insufficient funds");
+			throw new InsufficientFundsException("amount exists than original amount");
 	}
 	
 	
