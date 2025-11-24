@@ -19,6 +19,12 @@ public class MyCalculator  {
 //		};
 //		c.mul();
 		
+		Calculator c=()->{
+			int a=89,b=4;
+			return a/b;
+		};
+		System.out.println(c.div());
+		
 //		
 //		Calculator c=(String name)-> System.out.println(name);
 //		c.printName("praveen");
@@ -56,19 +62,19 @@ public class MyCalculator  {
 //		};
 //		c.sortString(s);
 		
-		String []s= {"praveen","barth","saro"};
-		Calculator c=(String[] str)->{
-			int len[]=new int[str.length];
-			for(int i=0;i<len.length;i++) {
-				len[i]=str[i].length();
-			}
-			return len;
-		
-		
-	};
-			int l[]=c.findLength(s);
-			for(int i=0;i<l.length;i++)
-				System.out.println(l[i]);
+//		String []s= {"praveen","barth","saro"};
+//		Calculator c=(String[] str)->{
+//			int len[]=new int[str.length];
+//			for(int i=0;i<len.length;i++) {
+//				len[i]=str[i].length();
+//			}
+//			return len;
+//		
+//		
+//	};
+//			int l[]=c.findLength(s);
+//			for(int i=0;i<l.length;i++)
+//				System.out.println(l[i]);
 	}
 	
 }
