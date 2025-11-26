@@ -47,6 +47,26 @@ public class App {
 //    	coffee.prepareDrink();
     	
     	
+    	
+    	//structural pattern
+    	//bridge pattern
+    	
+//    	Video youtubeHD =new Youtube(new HDProceesing());
+//    	youtubeHD.playVideo();
+//    	
+//    	Video prime4K =new PrimeChannel(new FourKProceesing());
+//    	prime4K.playVideo();
+    	
+    	
+    	//proxy pattern
+    	
+    	Payment netBanking=new NetBanking();
+    	netBanking.pay(5000);
+    	System.out.println("***************************************");
+    	Payment upi=new UPIPayament();
+    	upi.pay(80000);
+    	
+    	
     	//Assignments
     	//1.logger
 //    	Logger logger1= Logger.getInstance();
@@ -57,12 +77,12 @@ public class App {
     	
     	//2.ConfigurationManager
     	
-    	ConfigurationManager c1 = ConfigurationManager.getInstance();
-        System.out.println(c1.getSetting("appName"));
-
-        ConfigurationManager c2 = ConfigurationManager.getInstance();
-        System.out.println(c2.getSetting("version"));
-
-        System.out.println( c1 == c2);
+//    	ConfigurationManager c1 = ConfigurationManager.getInstance();
+//        System.out.println(c1.getSetting("appName"));
+//
+//        ConfigurationManager c2 = ConfigurationManager.getInstance();
+//        System.out.println(c2.getSetting("version"));
+//
+//        System.out.println( c1 == c2);
     }
 }
